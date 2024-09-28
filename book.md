@@ -3,3 +3,4 @@
 Reading Progression:
 1. Probability and counting
 1.1 Why study probability?
+2. Conditional probability
