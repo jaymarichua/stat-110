@@ -1,4 +1,5 @@
-Introduction to Probability by Joe Blitzstein and Jessica Hwang, available at http://probabilitybook.net/
+"Introduction to Probability" by Joe Blitzstein and Jessica Hwang, available at http://probabilitybook.net/
 
-Progression:
+Reading Progression:
 1. Probability and counting
+   1.1 Why study probability?
