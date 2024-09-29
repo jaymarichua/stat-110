@@ -76,3 +76,21 @@ A \text{ and } B \text{ are mutually exclusive} & A \cap B = \emptyset \\
 A_1, \ldots, A_n are a partition of S & A_1 \cup \cdots \cup A_n = S, A_i \cap A_j = \emptyset, for i \neq j
 \end{array}
 $$
+
+**Definition 1.3.1** (Naive definition of probability). Let $A$ be an event for an experiment with a finite sample space $S$. The naive probability of $A$ is
+
+  $`P_{naive}(A) = \frac{|A|}{|S|} = \frac{\text{number of outcomes favorable to} A}{\text{total number of outcomes in} S}.`$
+
+(We use |A| to denote the size of $A$; see Section A.1.5 of the math appendix.)
+
+In terms of Pebble World, the naive definition just says that the probability of $A$ is the fraction of pebbles that are in $A$. For example, in Figure 1.1 it says
+
+  $`P_{\text{naive}}(A) = \frac{5}{9}, P_{\text{naive}}(B) = \frac{4}{9}, P_{\text{naive}}(A \cup B) = \frac{8}{9}, P_{\text{naive}}(A \cap B) = \frac{1}{9}.`$
+
+For the complements of the events just considered,
+
+  $`P_{\text{naive}}(A) = \frac{5}{9}, P_{\text{naive}}(B) = \frac{4}{9}, P_{\text{naive}}(A \cup B) = \frac{8}{9}, P_{\text{naive}}(A \cap B) = \frac{1}{9}.`$
+
+In general,
+
+  $`P_{\text{naive}}(A^c) = \frac{|A^c|}{|S|} = \frac{|S| - |A|}{|S|} = 1 - \frac{|A|}{|S|} = 1 - P_{\text{naive}}(A).`$
