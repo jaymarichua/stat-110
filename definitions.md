@@ -54,5 +54,25 @@ What if the card drawn were a joker? That would indicate that we had the wrong s
 
 As the preceding examples demonstrate, events can be described in English or in set notation. Sometimes the English description is easier to interpret while the set notation is easier to manipulate. Let $S$ be a sample space and $s_actual$ be the actual outcome of the experiment (the pebble that ends up getting chosen when the experiment is performed). A mini-dictionary for converting between English and sets is given on the next page.
 
-   
-
+$$
+\begin{array}{ll}
+\text{English} & \text{Sets} \\
+\text{Events and occurrences} & \\
+\text{sample space} & S \\
+s \text{ is a possible outcome} & s \in S \\
+A \text{ is an event} & A \subseteq S \\
+A \text{ occurred} & s_{\text{actual}} \in A \\
+\text{something must happen} & s_{\text{actual}} \in S \\
+\text{New events from old events} & \\
+A \text{ or } B \text{ (inclusive)} & A \cup B \\
+A \text{ and } B & A \cap B \\
+\text{not } A & A^c \\
+A \text{ or } B, \text{ but not both} & (A \cap B^c) \cup (A^c \cap B) \\
+\text{at least one of } A_1, \ldots, A_n & A_1 \cup \cdots \cup A_n \\
+\text{all of } A_1, \ldots, A_n & A_1 \cap \cdots \cap A_n \\
+\text{Relationships between events} & \\
+A \text{ implies } B & A \subseteq B \\
+A \text{ and } B \text{ are mutually exclusive} & A \cap B = \emptyset \\
+A_1, \ldots, A_n are a partition of S & A_1 \cup \cdots \cup A_n = S, A_i \cap A_j = \emptyset, for i \neq j
+\end{array}
+$$
