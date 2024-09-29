@@ -79,7 +79,7 @@ $$
 
 **Definition 1.3.1** (Naive definition of probability). Let $A$ be an event for an experiment with a finite sample space $S$. The naive probability of $A$ is
 
-  $`P_{naive}(A) = \frac{|A|}{|S|} = \frac{\text{number of outcomes favorable to} A}{\text{total number of outcomes in} S}.`$
+  $`P_{naive}(A) = \frac{|A|}{|S|} = \frac{\text{number of outcomes favorable to } A}{\text{total number of outcomes in } S}.`$
 
 (We use |A| to denote the size of $A$; see Section A.1.5 of the math appendix.)
 
