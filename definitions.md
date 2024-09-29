@@ -1,4 +1,4 @@
-Definitions and Examples
+Definitions, Examples, and Theorems
 
 **Definition 1.2.1** (Sample space and event). The _sample space_ $S$ of an experiment is the set of all possible outcomes of the experiment. An _event_ $A$ is a subset of the sample space $S$, and we say that $A$ _occured_ if the actual outcome is in $A$. 
 
@@ -94,3 +94,7 @@ For the complements of the events just considered,
 In general,
 
   $`P_{\text{naive}}(A^c) = \frac{|A^c|}{|S|} = \frac{|S| - |A|}{|S|} = 1 - \frac{|A|}{|S|} = 1 - P_{\text{naive}}(A).`$
+
+**Theorem 1.4.1** (Multiplication rule). Consider a compound experiment consisting of two sub-experiments, Experiment A and Experiment B. Suppose that Experiment A has $a$ possible outcomes, and for each of those outcomes Experiment B has $b$ possible outcomes. Then the compound experiment has $ab$ possible outcomes.
+
+To see why the multiplication rule is true, imagine a tree diagram as in Figure 1.2. Let the tree branch $a$ ways according to the possibilities of Experiment A, and for each of those branches create $b$ further branches for Experiment B. Overall, there are $$\underbrace{b + b + \cdots + b}_{a} = ab$$ possibilities.
