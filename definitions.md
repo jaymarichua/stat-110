@@ -48,7 +48,7 @@ $(A \cup B)^c = A^c \cap B^c$ is the event that the card is a red non-ace.
 
 Also, note that , so $B$ can be expressed in terms of $D$ and $H$. On the other hand, the event that the card is a spade can't be written in terms of $A,B,D,H$ since none of them are fine-grained enough to be able to distinguish between spades and clubs.
 
-There are _many_ other events that could be defined using this sample space. In fact, the counting methods introduced later in this chapter show that there are $2^{52} \approx 4.5 \times 10^{15} events in this problem, even though there are only 52 pebbles.
+There are _many_ other events that could be defined using this sample space. In fact, the counting methods introduced later in this chapter show that there are $2^{52} \approx 4.5 \times 10^{15}$ events in this problem, even though there are only 52 pebbles.
 
 What if the card drawn were a joker? That would indicate that we had the wrong sample space; we are assuming that the outcome of the experiment is guaranteed to be an selement of $S$.
 
