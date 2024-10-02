@@ -135,4 +135,29 @@ For example, imagine a jar with $n$ balls, labeled from 1 to $n$. We sample ball
 
 This result also follows directly from the multiplication rule: each sampled ball is again a sub-experiment, and the number of possible outcomes decreases by 1 each time. Note that for sampling $k$ out of $n$ objects without replacement, we need $k \leq n$, whereas in sampling with replacement the objects are inexhaustible. 
 
-**Example 1.4.10** (Birthday problem). There are $k$ people in a room. Assume ...
+**Example 1.4.10** (Birthday problem). There are $k$ people in a room. Assume each person's birthday is equally likely  to be any of the 365 days of the year (we exclude February 29), and that people's birthdays are independent (we will define _independence_ formally later, but intuitively it means that knowing some people's birthdays gives us no information about other people's birthdays; this would not hold if, _e.g._, we knew that two of the people were twins). What is the probability that at least one pair of people in the group have the same birthday?
+
+_Solution:_
+
+There are $365^k$ ways to assign birthdays to the people in the room, since we can imagine the 365 days of the year being sampled $k$ times, with replacement. By assumption, all of these possibilities are equally likely, so the naive dfinition of probability applies.
+
+Used directly, the naive definition says we just need to count the number of ways to assign birthdays to $k$ people such that there are two people who share a birthday.
+
+But this counting problemn is hard, since it could be Emma and Steve who share a birthday, or Steve and Naomi, or all three of them, or the three of them could share a birthday while two others in the group share a different birthday, or various other possbilities.
+
+Instead, let's count the complement: the number of ways to assign birthdays to $k$ people such that no two people share a birthday. This amounts to sampling the 365 days of the year _without_ replacement, so the number of possibilities is $365 \cdot 364 \cdot 363 \cdots (365-k+1) \text{for } k \leq 365$. Therefore the probability of no birthday matches in a group of k people is
+
+$`P(\text{no birthday match}) = \frac{365 \cdot 364 \cdot (365-k+1)}{365^k}`$,
+
+and the probability of at least one birthday match is
+
+$`P(\text{at least 1 birthday match}) = 1 - \frac{365 \cdot 364 \cdot (365-k+1)}{365^k}`$.
+
+Of course, for $k = 366$ we are _guaranteed_ to have a match, but it's surprising that even with a much smaller number of people it's overwhelmingly likely that there is a birthday match. For a quick intuition into why it should not be so surprising, note that with 23 people there are $C(23,2) = 253$ _pairs_ of people, any of which could be a birthday match.
+
+Problems 26 and 27 show that the birthday problem is much more than a fun party game, and much more than a way to build intuition about coincidences; there are also important applications in statistics and computer science. Problem 62 explores the more general setting in which the probability is not necessarily 1/365 fo reach day. It turns out that in the non-equal probability case, having at least one match becomes even _more_ likely.
+
+**Warning 1.4.11** (Labeling objects). Drawing a sample from a population is a very fundamental concept in statistics. It is important to think of the objects or people in the population as _named_ or _labeled_. For example, if there are $n$ balls in a jar, we can imagine that they have labels from 1 to $n$, even if the balls look the same to the human eye. In the birthday problem, we can give each person an ID (identification) number, rather than thinking of people as indistinguishable particles or a faceless mob.
+
+A related example is an instructive blunder made by Leibniz in a seemingly simple problem (see Gorroochurn [14] for discussion of this and a variety of toher probability problems from a historical perspective).
+
