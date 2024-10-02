@@ -161,3 +161,12 @@ Problems 26 and 27 show that the birthday problem is much more than a fun party 
 
 A related example is an instructive blunder made by Leibniz in a seemingly simple problem (see Gorroochurn [14] for discussion of this and a variety of toher probability problems from a historical perspective).
 
+**Example 1.4.12** (Leibniz's mistake). If we roll two fair dice, which is more likely: a sum of 11 or a sum of 12?
+
+_Solution:_
+
+Label the dice A and B, and consider each dice to be a sub-experiment. By the multiplication rule, there are 36 possible outcomes for ordered pairs of the form (value of A, value of B), and they are equally likely by symmetry. Of these, (5,6) and (6,5) are favorable to a sum of 11, while only (6,6) is favorable to a sum of 12. Therefore a sum of 11 is twice as likely as a sum of 12; the probability is 1/18 for the former, and 1/36 for the latter.
+
+However, Leibniz wrongly argued that a sum of 11 and a sum of 12 are equally likely, claiming htat each of these sums can be attained in only one way. Here Leibniz was making the mistake of treating the two dice as indistinguishable objects, vieweing (5,6) and (6.5) as the same outcome.
+
+What are the antidotes to Leibniz's mistake? First, as explained in Warning 1.4.11, we should _label_ the objects in question instead of treating them as indistinguishable. If Leibniz had labeled his dice A and B, or green and orange, or left and right, he would not have made this mistake. Second, before we use counting for probability, we should ask ourselvbes whether the naive definition applies (see Warning 1.4.23 fofr another examp.le showing that caution is neeeded before applying the naive definition).
