@@ -134,3 +134,5 @@ For example, imagine a jar with $n$ balls, labeled from 1 to $n$. We sample ball
 **Theorem 1.4.8** (Sampling without replacement). Consider $n$ objects and making $k$ choices from them, one at a time _without replacement_ (i.e., choosing a certain object precludes it from being chosen again). Then there are $n(n-1) \cdots (n-k+1)$ possible outcomes for $1 \leq k \leq n$, and 0 possibilities for $k > n$ (where order matters). By convention, $n(n-1) \cdots (n-k+1) = n$ for $k = 1$.
 
 This result also follows directly from the multiplication rule: each sampled ball is again a sub-experiment, and the number of possible outcomes decreases by 1 each time. Note that for sampling $k$ out of $n$ objects without replacement, we need $k \leq n$, whereas in sampling with replacement the objects are inexhaustible. 
+
+**Example 1.4.10** (Birthday problem). There are $k$ people in a room. Assume ...
