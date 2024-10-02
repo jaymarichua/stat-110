@@ -143,7 +143,7 @@ There are $365^k$ ways to assign birthdays to the people in the room, since we c
 
 Used directly, the naive definition says we just need to count the number of ways to assign birthdays to $k$ people such that there are two people who share a birthday.
 
-But this counting problemn is hard, since it could be Emma and Steve who share a birthday, or Steve and Naomi, or all three of them, or the three of them could share a birthday while two others in the group share a different birthday, or various other possbilities.
+But this counting problem is hard, since it could be Emma and Steve who share a birthday, or Steve and Naomi, or all three of them, or the three of them could share a birthday while two others in the group share a different birthday, or various other possbilities.
 
 Instead, let's count the complement: the number of ways to assign birthdays to $k$ people such that no two people share a birthday. This amounts to sampling the 365 days of the year _without_ replacement, so the number of possibilities is $365 \cdot 364 \cdot 363 \cdots (365-k+1) \text{for } k \leq 365$. Therefore the probability of no birthday matches in a group of k people is
 
